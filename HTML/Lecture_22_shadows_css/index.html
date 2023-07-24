@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this parameters used in root can be used from anywhere */
+        :root{
+            --primary-color: brown;
+            --custom-width: 390px;
+        }
+        .container{
+            background-color: blueviolet;
+            border: 2px solid black;
+            height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* these parameters below can be only used in the paranthesis of this box */
+            --primary-color: brown;
+            --custom-width: 390px;
+            background-color: purple;
+            width: var(--custom-width);
+            height: 390px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: x-axix y-axix blur spread */
+            /* box-shadow: 10px 10px peru; */
+            /* box-shadow: 10px 20px 14px brown; */
+            /* box-shadow: 10px 20px 12px 19px beige; */
+            /* box-shadow: inset 10px 50px peru;*/
+
+            /* multicolor shadow  */
+            /* box-shadow: 10px 10px peru,14px 15px green;  */
+        }
+        #head1{
+            text-shadow: 2px 3px red;
+            /* text-shadow: 10px 10px peru,14px 15px green; */
+            /* by deaflut color of shadow is black */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.png" alt="logo">
+            <h2 id="head1">Welcome to IIT Jodhpur</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quibusdam accusantium perspiciatis? 
+                Amet, eius. Veniam perferendis totam minima repellendus deleniti. Ducimus voluptas ipsam recusandae dolor.</p>
+        </div>
+    </div>
+</body>
+</html>
